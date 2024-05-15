@@ -9,7 +9,7 @@ import TechnicalTerm from "@/components/TechnicalTerm"
 
 // images
 import IgniteERD from "../../../public/images/GDSC/ignite_erd.png"
-import GDSCRequestsPage from "../../../public/images/GDSC/gdsc_requests_page.png"
+import GDSCRequestsPage from "../../../public/images/GDSC/GDSC_requests_page.png"
 
 function page() {
   return (
