@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  *::selection {
+    @apply text-yellow-300;
+  }
+
+  .h1,
+  .h2,
+  .h3,
+  .h4 {
+    @apply leading-[100%] tracking-[0.04em];
+  }
+
+  .h1 {
+    @apply text-[28px] font-display font-semibold uppercase;
+  }
+
+  .h2 {
+    @apply text-[20px] font-display font-medium uppercase;
+  }
+
+  .grid-layout {
+    @apply relative z-10 col-start-1 col-end-13 grid grid-cols-12 grid-gap;
+  }
+
+  .grid-gap {
+    @apply gap-x-3 gap-y-3;
+  }
+
+  .text-padding {
+    @apply px-4;
+  }
+
+  .caption {
+    @apply font-mono uppercase text-[12px] opacity-50 text-white;
+  }
+
+  .body {
+    @apply text-[14px] font-sans;
+  }
+}
+
+@font-face {
+  font-family: "OffBit";
+  src: url("/fonts/OffBitTrial-101Bold.otf") format("truetype");
+  font-weight: 400;
+}
