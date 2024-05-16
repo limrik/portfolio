@@ -1,6 +1,7 @@
 import ProjectCard from "@/components/ProjectCard"
 import GDSC from "../../public/project-covers/gdsc.png"
 import TravelBro from "../../public/project-covers/travelBro.png"
+import H4G from "../../public/project-covers/h4g.png"
 
 export default function Home() {
   return (
@@ -23,13 +24,13 @@ export default function Home() {
           <p className="caption col-start-3">Role</p>
           <p className="caption col-start-5">Duration</p>
           <WorkExperience
-            company="NUS School of Computing"
-            role="Teaching Assistant"
+            company="Google Developer Student Club NUS"
+            role="Full Stack Software Engineer"
             duration="Aug 2023 - May 2024"
           />
           <WorkExperience
-            company="Google Developer Student Club NUS"
-            role="Full Stack Software Engineer"
+            company="NUS School of Computing"
+            role="Teaching Assistant"
             duration="Aug 2023 - May 2024"
           />
           <WorkExperience
@@ -60,6 +61,16 @@ export default function Home() {
             title="TravelBro"
             description="One-stop Travel Planner"
             alt="TravelBro cover image"
+          ></ProjectCard>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <ProjectCard
+            link="big-heart-bros"
+            image={H4G}
+            title="Hack4Good 2024"
+            description="Creating solutions for Non-Profit Organisations"
+            alt="Hack4Good cover image"
           ></ProjectCard>
         </div>
       </div>
