@@ -48,6 +48,9 @@ function page() {
         <LinkCard link="https://docs.google.com/document/d/1dKfQuokaTJD5GQxjExhXxoMNdGP47wFoLKb9-EAvfIY/edit?usp=embed_facebook">
           Project Documentation
         </LinkCard>
+        <LinkCard link="https://github.com/limrik/travelBro" col="1">
+          Github
+        </LinkCard>
 
         <Divider />
         <ProjectBody title="System Design"></ProjectBody>

@@ -34,7 +34,7 @@ function page() {
           volunteers to enroll, manage activities, and request certificates,
           while enabling nonprofit administrators to efficiently handle forms,
           attendance, and generate detailed reports". I am proud that we made it
-          to the finals of the hackathon (10 out of 100 teams).
+          to the finals of the hackathon (top 10 out of 100 teams).
         </ProjectBody>
         <ProjectDetails
           role="Full Stack Software Developer"
@@ -44,6 +44,10 @@ function page() {
         <LinkCard link="https://docs.google.com/presentation/d/1Vt3Wvl5koyhArwzo2danmHEAl0Fc2dzFw8pnTal1iZU/edit#slide=id.g1f0c53ac0ea_0_10">
           Pitch Deck
         </LinkCard>
+        <LinkCard link="https://github.com/limrik/big-heart-bros" col="1">
+          Github
+        </LinkCard>
+
         <Divider />
         <ProjectBody title="System Design">
           We created a web application suited for 3 stakeholders - Big At Heart
