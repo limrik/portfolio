@@ -4,7 +4,9 @@ function LinkCard(props: any) {
   return (
     <a
       href={props.link}
-      className="caption group text-white/80 flex items-center p-4 col-start-5 col-end-9 bg-white/[0.1] rounded-md hover:bg-white/[0.2] hover:text-white"
+      className={`${
+        props.col == "1" ? "col-start-9 col-end-13" : "col-start-5 col-end-9"
+      } caption group text-white/80 flex items-center p-4  bg-white/[0.1] rounded-md hover:bg-white/[0.2] hover:text-white`}
     >
       <p>{props.children}</p>
       <svg
