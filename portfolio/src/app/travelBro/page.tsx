@@ -8,8 +8,7 @@ import Divider from "@/components/Divider"
 import TechnicalTerm from "@/components/TechnicalTerm"
 
 // images
-import FlowDiagram from "../../../public/images/TravelBro/TravelBro_overall_flow_diagram.png"
-import SequenceDiagram from "../../../public/images/TravelBro/TravelBro_sequence_diagram.png"
+import Diagrams from "../../../public/images/TravelBro/diagrams.png"
 import LoginPage from "../../../public/images/TravelBro/TravelBro_login_page.png"
 import TravelPreferences from "../../../public/images/TravelBro/TravelBro_travel_preferences.png"
 import SelectActivities from "../../../public/images/TravelBro/TravelBro_select_activities.png"
@@ -54,11 +53,11 @@ function page() {
 
         <Divider />
         <ProjectBody title="System Design"></ProjectBody>
-        <ProjectMedia image={FlowDiagram} alt="TravelBro overall flow diagram">
-          Flow Diagram
-        </ProjectMedia>
-        <ProjectMedia image={SequenceDiagram} alt="TravelBro sequence diagram">
-          Sequence Diagram
+        <ProjectMedia
+          image={Diagrams}
+          alt="TravelBro Flow and Sequence Diagrams"
+        >
+          Flow and Sequence Diagrams
         </ProjectMedia>
 
         <Divider />

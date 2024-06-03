@@ -23,8 +23,8 @@ function Navbar() {
         <h1>Lim Rik</h1>
       </Link>
 
-      <p className="col-span-2 col-start-7">Software Engineer</p>
-      <p className="col-span-3">Singapore</p>
+      <p className="col-span-2 col-start-9">Software Engineer</p>
+      <p className="col-span-2">Singapore</p>
     </nav>
   )
 }
