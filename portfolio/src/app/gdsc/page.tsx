@@ -61,6 +61,7 @@ function page() {
         <ProjectMedia image={GDSCRequestsPage} alt="GDSC Requests Page">
           Designed a landing page to display requests and offers
         </ProjectMedia>
+        <ProjectMedia />
       </div>
     </div>
   )
