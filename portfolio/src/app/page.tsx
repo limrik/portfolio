@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <section className="my-6 grid-layout text-white">
         {/* about me */}
-        <div className="flex flex-col col-start-1 col-span-5 gap-3">
+        <div className="flex flex-col col-start-1 col-end-13 gap-3 md:col-span-5 ">
           <p className="caption">About me</p>
           <p className="body">
             Hey there, I am Rik. I am currently a second year Computer Science
@@ -24,10 +24,15 @@ export default function Home() {
         </div>
 
         {/* work experience */}
-        <div className="grid grid-cols-6 gap-3 col-start-7 col-end-13">
+        <div className="grid grid-cols-6 gap-3 col-start-1 col-end-13 md:col-start-7">
           <p className="caption col-start-1 col-span-2">Work Experience</p>
-          <p className="caption col-start-3">Role</p>
-          <p className="caption col-start-5">Duration</p>
+          <p className="caption col-start-4 col-span-2 md:hidden">
+            Role & Duration
+          </p>
+          <p className="hidden md:inline caption col-start-4 md:col-start-3">
+            Role
+          </p>
+          <p className="hidden md:inline caption col-start-5">Duration</p>
           <WorkExperience
             company="Jurong Town Corporation"
             role="Software Engineering Intern"
@@ -52,7 +57,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="grid relative z-10 col-start-1 col-end-13 grid-cols-3 grid-gap">
+      <div className="grid relative z-10 col-start-1 col-end-13 md:grid-cols-3 grid-gap">
         {/* column 1 */}
         <div className="flex flex-col gap-4">
           <ProjectCard
@@ -100,13 +105,14 @@ export default function Home() {
 function WorkExperience(props: any) {
   return (
     <>
-      <h1 className="col-span-2 col-start-1 text-white body">
+      <h1 className="col-span-3 col-start-1 md:col-span-2 text-white body">
         {props.company}
       </h1>
-      <h1 className="col-span-2 col-start-3 text-white body opacity-80">
+      <h1 className="col-span-3 col-start-4 md:col-start-3 md:col-span-2 text-white body opacity-80">
         {props.role}
+        <h1 className="md:hidden">{props.duration}</h1>
       </h1>
-      <h1 className="col-span-2 col-start-5 text-white body opacity-80">
+      <h1 className="hidden md:inline col-span-2 col-start-5 md: text-white body opacity-80">
         {props.duration}
       </h1>
     </>

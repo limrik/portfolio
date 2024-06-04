@@ -15,7 +15,7 @@ function ProjectMedia(props: any) {
   return (
     <>
       <div
-        className={`grid overflow-hidden col-start-5 col-end-13 w-full bg-[#111111]
+        className={`grid overflow-hidden col-start-1 md:col-start-5 col-end-13 w-full bg-[#111111]
     ${
       props.pl ||
       props.pr ||
@@ -51,7 +51,9 @@ function ProjectMedia(props: any) {
         </div>
       </div>
 
-      <p className="caption my-2 col-start-5 col-end-13">{props.children}</p>
+      <p className="caption mb-2 col-start-1 md:col-start-5 col-end-13">
+        {props.children}
+      </p>
     </>
   )
 }

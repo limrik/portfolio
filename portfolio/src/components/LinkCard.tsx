@@ -5,8 +5,10 @@ function LinkCard(props: any) {
     <a
       href={props.link}
       className={`${
-        props.col == "1" ? "col-start-9 col-end-13" : "col-start-5 col-end-9"
-      } caption group text-white/80 flex items-center p-4  bg-white/[0.1] rounded-md hover:bg-white/[0.2] hover:text-white`}
+        props.col == "1"
+          ? "md:col-start-9 md:col-end-13"
+          : "md:col-start-5 md:col-end-9"
+      } col-start-1 col-end-13 caption group text-white/80 flex items-center p-4  bg-white/[0.1] rounded-md hover:bg-white/[0.2] hover:text-white`}
     >
       <p>{props.children}</p>
       <svg
