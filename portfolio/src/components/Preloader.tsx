@@ -10,11 +10,7 @@ function Preloader(props: any) {
       }`}
     >
       {props.hideText ? null : (
-        <p
-          className={`${
-            props.dark ? `text-white` : `text-zinc-500`
-          } caption flex h-full justify-center items-center`}
-        >
+        <p className=" text-white caption flex h-full justify-center items-center">
           Generating content
           <span className="inline animate-bounce_1s_ease-in-out_infinite">
             .

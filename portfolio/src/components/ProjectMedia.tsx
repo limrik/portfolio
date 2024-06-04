@@ -15,7 +15,7 @@ function ProjectMedia(props: any) {
   return (
     <>
       <div
-        className={`grid overflow-hidden col-start-5 col-end-13 w-full bg-gray-300
+        className={`grid overflow-hidden col-start-5 col-end-13 w-full bg-[#111111]
     ${
       props.pl ||
       props.pr ||
@@ -33,21 +33,21 @@ function ProjectMedia(props: any) {
 `}
       >
         <div className="relative">
-          <Image
-            src={props.image}
-            alt={props.alt}
-            layout={props.fill ? "fill" : "responsive"}
-            onLoadingComplete={() => {
-              handleImageLoad()
-            }}
-            className={`${props.pAll ? "rounded md:rounded-md" : ""}
-            ${props.pt && props.pl ? "rounded-tl md:rounded-tl-xl" : ""}
-            ${props.pt && props.pr ? "rounded-tr md:rounded-tr-xl" : ""}
-            ${props.pb && props.pl ? "rounded-bl md:rounded-bl-xl" : ""}
-            ${
-              props.pb && props.pr ? "rounded-br-md md:rounded-br-xl" : ""
-            } w-full h-auto `}
-          />
+          <article
+            className={`w-full h-auto transition duration-500 rounded-md ease-out
+              ${isImageLoaded ? "opacity-1" : "opacity-0"}`}
+          >
+            <Image
+              src={props.image}
+              alt={props.alt}
+              layout="responsive"
+              onLoadingComplete={() => {
+                handleImageLoad()
+              }}
+              className="w-full h-auto"
+            />
+          </article>
+          <Preloader isContentLoaded={isImageLoaded}></Preloader>
         </div>
       </div>
 
