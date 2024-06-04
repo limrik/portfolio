@@ -6,6 +6,7 @@ import ProjectDetails from "@/components/ProjectDetails"
 import ProjectMedia from "@/components/ProjectMedia"
 import Divider from "@/components/Divider"
 import TechnicalTerm from "@/components/TechnicalTerm"
+import ProjectHero from "@/components/ProjectHero"
 
 // images
 import Diagrams from "../../../public/images/TravelBro/diagrams.png"
@@ -20,11 +21,7 @@ import LinkCard from "@/components/LinkCard"
 function page() {
   return (
     <div>
-      <Image
-        src={TravelBro}
-        alt="gdsc hero"
-        className="relative overflow-hidden w-full h-[49vw] my-8 object-cover"
-      />
+      <ProjectHero image={TravelBro} alt="gdsc hero" />
       <div className="grid grid-cols-12 grid-gap">
         <ProjectTitle
           company="TravelBro"

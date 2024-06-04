@@ -6,6 +6,7 @@ import ProjectDetails from "@/components/ProjectDetails"
 import ProjectMedia from "@/components/ProjectMedia"
 import Divider from "@/components/Divider"
 import TechnicalTerm from "@/components/TechnicalTerm"
+import ProjectHero from "@/components/ProjectHero"
 
 // images
 import IgniteERD from "../../../public/images/GDSC/ignite_erd.png"
@@ -14,11 +15,7 @@ import GDSCRequestsPage from "../../../public/images/GDSC/GDSC_requests_page.png
 function page() {
   return (
     <div>
-      <Image
-        src={GDSC}
-        alt="gdsc hero"
-        className="relative overflow-hidden w-full h-[49vw] my-8 object-cover"
-      />
+      <ProjectHero image={GDSC} alt="gdsc hero" />
       <div className="grid grid-cols-12 grid-gap">
         <ProjectTitle
           company="Google Developer Student Clubs"

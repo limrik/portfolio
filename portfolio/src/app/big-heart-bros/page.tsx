@@ -6,6 +6,7 @@ import ProjectDetails from "@/components/ProjectDetails"
 import ProjectMedia from "@/components/ProjectMedia"
 import Divider from "@/components/Divider"
 import TechnicalTerm from "@/components/TechnicalTerm"
+import ProjectHero from "@/components/ProjectHero"
 
 // images
 import SystemDesign from "../../../public/images/H4G/system-design.png"
@@ -17,11 +18,7 @@ import LinkCard from "@/components/LinkCard"
 function page() {
   return (
     <div>
-      <Image
-        src={H4G}
-        alt="Hack4Good hero"
-        className="relative overflow-hidden w-full h-[49vw] my-8 object-contain"
-      />
+      <ProjectHero image={H4G} alt="Hack4Good hero" />
       <div className="grid grid-cols-12 grid-gap">
         <ProjectTitle
           company="Hack4Good 2024"

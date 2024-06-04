@@ -7,15 +7,12 @@ import ProjectMedia from "@/components/ProjectMedia"
 import Divider from "@/components/Divider"
 import TechnicalTerm from "@/components/TechnicalTerm"
 import LinkCard from "@/components/LinkCard"
+import ProjectHero from "@/components/ProjectHero"
 
 function page() {
   return (
     <div>
-      <Image
-        src={JTC}
-        alt="gdsc hero"
-        className="relative overflow-hidden w-full h-[49vw] my-8 bg-contain"
-      />
+      <ProjectHero image={JTC} alt="gdsc hero" />
       <div className="grid grid-cols-12 grid-gap">
         <ProjectTitle
           company="Jurong Town Corporation"
