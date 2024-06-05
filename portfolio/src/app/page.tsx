@@ -110,7 +110,7 @@ function WorkExperience(props: any) {
       </h1>
       <h1 className="col-span-3 col-start-4 md:col-start-3 md:col-span-2 text-white body opacity-80">
         {props.role}
-        <h1 className="md:hidden">{props.duration}</h1>
+        <p className="md:hidden">{props.duration}</p>
       </h1>
       <h1 className="hidden md:inline col-span-2 col-start-5 md: text-white body opacity-80">
         {props.duration}

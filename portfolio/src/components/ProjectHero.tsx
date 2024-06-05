@@ -15,28 +15,27 @@ function ProjectHero(props: any) {
   return (
     <>
       <div className="col-start-1 col-end-13 w-full bg-[#cac9c9]">
-        <div className="relative">
+        <div className="relative h-[49vw] my-8 overflow-hidden">
+          {" "}
+          {/* Set a fixed height */}
           <article
-            className={`w-full h-auto transition duration-500 rounded-md ease-out
-              ${isImageLoaded ? "opacity-1" : "opacity-0"}`}
+            className={`w-full h-full transition duration-500 rounded-md ease-out ${
+              isImageLoaded ? "opacity-1" : "opacity-0"
+            }`}
           >
             <Image
               src={props.image}
               alt={props.alt}
-              layout="responsive"
-              onLoadingComplete={() => {
-                handleImageLoad()
-              }}
-              className="relative overflow-hidden w-full h-[49vw] my-8 object-contain"
+              layout="fill" // Fill the container
+              objectFit="cover" // Cover the container (cropping)
+              objectPosition="center" // Center the image
+              onLoadingComplete={handleImageLoad}
+              className="absolute inset-0" // Ensure the image absolutely covers the container
             />
           </article>
           <Preloader isContentLoaded={isImageLoaded}></Preloader>
         </div>
       </div>
-
-      <p className="caption mb-2 col-start-1 md:col-start-5 col-end-13">
-        {props.children}
-      </p>
     </>
   )
 }
