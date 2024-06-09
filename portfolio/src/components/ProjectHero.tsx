@@ -26,10 +26,9 @@ function ProjectHero(props: any) {
             <Image
               src={props.image}
               alt={props.alt}
-              layout="fill" // Fill the container
-              objectFit="cover" // Cover the container (cropping)
-              objectPosition="center" // Center the image
-              onLoadingComplete={handleImageLoad}
+              fill // Fill the container
+              style={{ objectFit: "cover", objectPosition: "center" }} // Cover the container (cropping)
+              onLoad={handleImageLoad}
               className="absolute inset-0" // Ensure the image absolutely covers the container
             />
           </article>

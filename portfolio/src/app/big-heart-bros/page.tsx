@@ -22,7 +22,7 @@ function page() {
       <div className="grid grid-cols-12 grid-gap">
         <ProjectTitle
           company="Hack4Good 2024"
-          description="Creating solutions for Non-Profit Organisations"
+          description="Non-Profit Organisations"
         />
         <ProjectBody>
           Hack4Good is an annual flagship hackathon organised by Google

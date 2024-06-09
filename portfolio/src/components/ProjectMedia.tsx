@@ -40,11 +40,10 @@ function ProjectMedia(props: any) {
             <Image
               src={props.image}
               alt={props.alt}
-              layout="responsive"
-              onLoadingComplete={() => {
+              onLoad={() => {
                 handleImageLoad()
               }}
-              className="w-full h-auto"
+              className="w-full h-auto responsive"
             />
           </article>
           <Preloader isContentLoaded={isImageLoaded}></Preloader>

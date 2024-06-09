@@ -33,7 +33,7 @@ function page() {
           needs.
         </ProjectBody>
         <ProjectDetails
-          role="Full Stack Software Developer"
+          role="Software Developer"
           duration="Aug 2023 - May 2023"
           tools={["React", "PostgreSQL", "Express", "Node"]}
         />

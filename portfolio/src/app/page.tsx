@@ -41,7 +41,7 @@ export default function Home() {
 
           <WorkExperience
             company="Google Developer Student Club NUS"
-            role="Full Stack Software Engineer"
+            role="Software Engineer"
             duration="Aug 2023 - May 2024"
           />
           <WorkExperience
@@ -83,7 +83,7 @@ export default function Home() {
             link="big-heart-bros"
             image={H4G}
             title="Hack4Good 2024"
-            description="Creating solutions for Non-Profit Organisations"
+            description="Non-Profit Organisations"
             alt="Hack4Good cover image"
           ></ProjectCard>
         </div>

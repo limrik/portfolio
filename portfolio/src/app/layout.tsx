@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer"
 import Icon from "../../public/farmer-hat.png"
 import { GoogleAnalytics } from "@next/third-parties/google"
 
@@ -22,7 +23,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-[#111111] text-padding`}>
         <Navbar />
-        <main className="relative">{children}</main>
+        <main className="relative pb-8 z-[3] bg-[#111111]">{children}</main>
+        <Footer />
       </body>
       <GoogleAnalytics gaId="G-J3TWZW2L58" />
     </html>
