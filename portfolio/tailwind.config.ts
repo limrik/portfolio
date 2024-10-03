@@ -39,11 +39,20 @@ const config: Config = {
       ],
     },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "primary-cream": "#EBE7E0",
+        "azuki-red": "#C03540",
+        "ash-white": "#EFF3F2",
+        "rabbit-fur": "#DFDFDD",
+        "pale-smoke": "#BBBEB7",
+        "spirit-guide": "#403E53",
+        "suijin-blue": "#2F4773",
       },
+    },
+    backgroundImage: {
+      "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      "gradient-conic":
+        "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
     },
   },
   plugins: [],
