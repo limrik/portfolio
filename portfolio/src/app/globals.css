@@ -44,7 +44,7 @@
 }
 
 @font-face {
-  font-family: "OffBit";
-  src: url("/fonts/OffBitTrial-101Bold.otf") format("truetype");
+  font-family: 'OffBit';
+  src: url('/fonts/OffBitTrial-101Bold.otf') format('truetype');
   font-weight: 400;
 }
